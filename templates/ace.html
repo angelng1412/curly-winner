@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Occupation </title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Occupations</th>
+        <th>Percentage</th>
+      </tr>
+      {% for i in table %}
+      <tr> 
+        <td>
+          {{i[0]}}
+        </td>
+        <td>
+          {{i[1]}}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    <br>
+    Your chosen occupation is: {{randjob}}
+  </body>
+</html>
